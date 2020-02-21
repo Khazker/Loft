@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="assects/images/mini_logo.png">
+    <link rel="stylesheet" href="assects/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+    <head>
+        <div class="headgray_background">
+            <div class="container" >
+                <div class="head_gray">
+                    <nav class="nav_gray">
+                        <a class="nav_gray_link" href="/index.html">Главная</a>
+                        <a class="nav_gray_link" href='/stocks.html'>Акции</a>
+                        <a class="nav_gray_link" href="/services.html">Услуги</a>
+                        <a class="nav_gray_link" href="/photogalery.html">Фотогалерея</a>
+                        <a class="nav_gray_link" href="/contacts.html">Контакты</a>
+                    </nav>
+                    <div class="phone">
+                        <img src="assects/images/telefon_white.png" class="phone_imag">
+                        <div class="phone_nums">
+                            <p class="phone_number">+7(909)1338001</p>
+                            <p class="phone_number">+7(909)1337210</p>
+                            <p class="phone_number">+7(919)5236800</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.headgray -->
+            </div>
+        </div>
+        <div class="head_white_background">
+            <div class="container">
+                <div class="head_white">
+                    <div class="logo_fur_png">
+                        <img src="assects/images/logo.png" class="logo_png">
+                        <img src="assects/images/mebel.png" class="fur_png">
+                    </div>
+                    <div class="nav_furniture">
+                        <a class="nav_link_fur" href="/photogalery.html">Сиденья</a>
+                        <a class="nav_link_fur" href="/photogalery.html">Столы</a>
+                        <a class="nav_link_fur" href="/photogalery.html">Хранение</a>
+                        <a class="nav_link_fur" href="/photogalery.html">Другое</a>
+                    </div>
+                </div>
+                <!-- /.head_white -->
+            </div>
+        </div>
+    </head>
+    <div class="content">
+        <div class="container">
+            <form class="form_position" action="send.php" method="post">
+                <div class="close_form"></div>
+                <p class="name_form">Заказать расчет продукции</p>
+                <input class="enter_fio" type="text" name="fio" placeholder="Как к Вам обращаться" required><br>
+                <input class="enter_answer" type="text" name="email" placeholder="Укажите e-mail" required><br>
+                <textarea class="enter_comment" name="area" cols=”25” rows=”5” wrap=”on” placeholder="Ваш комментарий к заказу" required></textarea><br>
+                <div class="enter_chek">
+                    <input class="chek" type="checkbox" name="Согласен" value="1" required>
+                    <p class="agree_chek" onClick="CheckClick(this)">Нажимая кнопку “Заказать расчет”, я даю согласие на обработку персоналтных данных.</p><br>
+                </div>
+                <input class="form_btn" type="submit" value="Заказать расчет">
+            </form>
+            <div class="block_picture" >
+                <div class="dark_picture">
+                    <p class="make_fur">Изготовление мебели под заказ по<br>индивидуальным размерам и эскизам</p>
+                    <div class="btn">Расчитать стоимость</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="describe_block">
+        <div class="container">
+            <div class="describe">
+                <div class="des_item">
+                    <img src="assects/images/coin.png" class="price_png">
+                    <p class="text">Средняя цена по рынку</p>
+                </div>
+                <div class="des_item">
+                    <img src="assects/images/speed.png" class="speed_png">
+                    <p class="text">Доставка по всей России</p>
+                </div>
+                <div class="des_item">
+                    <img src="assects/images/time.png" class="time_png">
+                    <p class="text">Средний срок изготовления</p>
+                </div>
+            </div>
+            <!-- /.describe -->
+        </div>
+    </div>
+    <div class="product">
+        <div class="container">
+            <h2 class="head_prod">Наша продукция и услуги</h2>
+            <div class="blocks_picture">
+                <a class="table" href="/photogalery.html">
+                    <div class="dark_picture">
+                        <p class="text_prod">Столы</p>
+                    </div>
+                </a>
+                <a class="chair" href="/photogalery.html">
+                    <div class="dark_picture">
+                        <p class="text_prod">Стулья</p>
+                    </div>
+                </a>
+                <a class="storage" href="/photogalery.html">
+                    <div class="dark_picture">
+                        <p class="text_prod">Хранение</p>
+                    </div>
+                </a>
+                <a class="another" href="/photogalery.html">
+                    <div class="dark_picture">
+                        <p class="text_prod">Другое</p>
+                    </div>
+                </a>
+            </div>
+            <!-- /.blocks_picture -->
+        </div>
+    </div>
+    <div class="con_about">
+        <div class="container">
+            <div class="about">
+                <h3 class="about_company">О компании</h3>
+                <p class="text_about">Лофт - один из самых молодых стилей, популярность которого в наши дни очень велика. Он появился в начале XX века и пришел к нам из Соединенных Штатов. Благодаря творческим жителям Нью-Йорка появились первые мастерские и квартиры-студии в стиле лофт. Так как в сороковых годах ХХ века освободилось множество дешевых заводских зданий, в них начали перебираться начинающие художники, музыканты, просто творческие люди и небогатая молодежь того времени. Таким людям были свойственны неординарные решения, любовь к свободе, минимализму и неограниченному пространству для самовыражения. Энди Уорхол (заметная персона в истории современного искусства) поддерживал и активно продвигал стиль лофт в массы.<br><br> Производственно-торговая компания “mebel.krv” занимается производством, оптовой и розничной торговлей готовой продукции в стиле лофт. На нашем складе постоянно поддерживается ассортимент из более чем 100 наименований товаров: <br>-столы; <br>-столешницы; <br>-барные столики; <br>-стулья; <br>-барные стулья; <br>-табуреты; <br>-стеллажи; <br>-консоли; <br>-шкафы; <br>-зеркала и пр. <br><br>Нашими покупателями являются как крупнейшие сети, так и многие розничные магазины, строительные организации, мебельные производства, частные покупатели всех районов России.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_menu">
+            <div class="container">
+                <table>
+                    <tr><th>Разделы сайта</th><th>Товары и услуги</th><th>Наши контакты</th><th class="th_about">О компании</th></tr>
+                    <tr><td class="td_up">
+                            <a href="/index.html" class="footer_sites">Главная</a><br>
+                            <a href="/stocks.html" class="footer_sites">Акции</a><br>
+                            <a href="/services.html" class="footer_sites">Услуги</a><br>
+                            <a href="/photogalery.html" class="footer_sites">Фотогалерея</a><br>
+                            <a href="/contacts.html" class="footer_sites">Контакты</a>
+                        </td>
+                        <td class="td_up">
+                            <a href="/photogalery.html" class="footer_sites">Сиденья</a><br>
+                            <a href="/photogalery.html" class="footer_sites">Столы</a><br>
+                            <a href="/photogalery.html" class="footer_sites">Хранение</a><br>
+                            <a href="/photogalery.html" class="footer_sites">Другое</a>
+                        </td>
+                        <td>
+                            <p>Кировская обл., г. Киров</p>
+                            <p><span class="foot_text_gray">Телефоны:</span>
+                                <br>+7(909)1338001<br>+7(909)1337210<br>+7(919)5236800<br>
+                                <span class="foot_text_gray">E-mail:</span>
+                                <br>mebel.krv@yandex.ru</p>
+                        </td>
+                        <td>
+                            <img src="assects/images/logo.png" class="logo_png">
+                            <img src="assects/images/mebel.png" class="fur_png">
+                            <p class="text_footer">Мы готовы предложить большой выбор мебели в стиле лофт, сделав акцент на качестве продукции по ценам, доступным каждому клиенту.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer_gray">
+            <div class="container">
+                <div class="footer_gray_describe">
+                    <p class="foot_gray_loft">mebel.krv - качественная мебель в стиле лофт</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/assects/js/main.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
